@@ -15,6 +15,7 @@ body{
     height: 67.5vmin;
     width: 95vmin;
     position: relative;
+    overflow: hidden;
 }
 img{
     width: 100%;
@@ -22,8 +23,6 @@ img{
     position: absolute;
 
 }
-
-/* This part is important */
 #my-img{
     clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
 }
@@ -36,3 +35,14 @@ img{
     background-color: transparent;
     outline: none;
 }
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 40px;
+    width: 40px;
+    background: url("images/image-slider.png"), rgba(255,255,255,0.3);
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background-size: contain;
+    cursor: pointer;
+}
+
